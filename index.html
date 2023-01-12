@@ -23,7 +23,7 @@
                 <input type="text" id="title" placeholder="What are you counting down to?">
                 <label for="date-picker">Select a Date</label>
                 <input type="date" id="date-picker">
-                <button class="submit" type="button">Submit</button>
+                <button class="submit" type="button" onclick="getTheTime()">Submit</button>
             </form>
         </div>
         <!-- Countdown -->
@@ -35,13 +35,13 @@
                 <li><span class="minutes"></span>Minutes</li>
                 <li><span class="seconds"></span>Seconds</li>
             </ul>
-            <button id="countdown-button">RESET</button>
+            <button id="countdown-button" onclick="resetIt()">RESET</button>
         </div>
         <!-- Complete -->
         <div class="complete hidden" id="complete" >
             <h1 class="complete-title">Countdown Complete!</h1>
             <h1 id="complete-info"></h1>
-            <button id="complete-button">NEW COUNTDOWN</button>
+            <button id="complete-button" onclick="done()">NEW COUNTDOWN</button>
         </div>
     </div>
     <!-- Script -->
